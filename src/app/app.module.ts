@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WaringalertComponent } from './waringalert/waringalert.component';
+import { SuccessalertComponent } from './successalert/successalert.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WaringalertComponent,
+    SuccessalertComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
