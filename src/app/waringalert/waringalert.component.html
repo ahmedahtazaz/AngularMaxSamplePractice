@@ -1,1 +1,3 @@
-<p>waringalert works!</p>
+<p [ngClass]="{online: componentStatus === 'online'}">
+warningalert {{ componentId }} is {{ getComponentStatus() }}
+</p>
